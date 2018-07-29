@@ -1,0 +1,42 @@
+---
+title: "Pokemon Web Scraper"
+output: html_notebook
+---
+
+
+```{r Libraries}
+    # General-purpose data wrangling
+    library(tidyverse)  
+
+    # Parsing of HTML/XML files  
+    library(rvest)    
+
+    # String manipulation
+    library(stringr)   
+
+    # Eases DateTime manipulation
+    library(lubridate)
+```
+
+```{r Scrape page}
+
+url <- "https://pokemondb.net/pokedex/all"
+webpage <- read_html(url)
+```
+
+Find the maximum number of pages to be queried
+Generate all the subpages that make up the reviews
+Scrape the information from each of them
+Combine the information into one comprehensive data frame
+
+```{r}
+
+poke_nums_html <- html_nodes(webpage,".cell-fixed")
+
+poke_nums <- html_text(poke_nums_html)
+
+head(poke_nums)
+
+
+```
+
