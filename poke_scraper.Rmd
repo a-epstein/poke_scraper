@@ -54,8 +54,18 @@ poke_names <- html_text(poke_names_html)
 head(poke_names)
 ```
 
+```{r Pokemon BST}
+
+poke_total_html <- html_nodes(webpage, ".cell-total")
+
+poke_total <- html_text(poke_total_html)
+
+
+```
+
+
 ```{r Combine into a dataframe}
-pokemon_df <- data.frame(Number = poke_nums,Name = poke_names)
+pokemon_df <- data.frame(Number = poke_nums,Name = poke_names, BST = poke_total)
 
 head(pokemon_df)
 

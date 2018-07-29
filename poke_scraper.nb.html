@@ -268,24 +268,32 @@ head(poke_names)</code></pre>
 <!-- rnb-text-begin -->
 <!-- rnb-text-end -->
 <!-- rnb-chunk-begin -->
-<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxucG9rZW1vbl9kZiA8LSBkYXRhLmZyYW1lKE51bWJlciA9IHBva2VfbnVtcyxOYW1lID0gcG9rZV9uYW1lcylcbmhlYWQocG9rZW1vbl9kZilcbmBgYCJ9 -->
-<pre class="r"><code>pokemon_df &lt;- data.frame(Number = poke_nums,Name = poke_names)
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxucG9rZV90b3RhbF9odG1sIDwtIGh0bWxfbm9kZXMod2VicGFnZSwgXCIuY2VsbC10b3RhbFwiKVxucG9rZV90b3RhbCA8LSBodG1sX3RleHQocG9rZV90b3RhbF9odG1sKVxuYGBgIn0= -->
+<pre class="r"><code>poke_total_html &lt;- html_nodes(webpage, &quot;.cell-total&quot;)
+poke_total &lt;- html_text(poke_total_html)</code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-chunk-end -->
+<!-- rnb-text-begin -->
+<!-- rnb-text-end -->
+<!-- rnb-chunk-begin -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxucG9rZW1vbl9kZiA8LSBkYXRhLmZyYW1lKE51bWJlciA9IHBva2VfbnVtcyxOYW1lID0gcG9rZV9uYW1lcywgQlNUID0gcG9rZV90b3RhbClcbmhlYWQocG9rZW1vbl9kZilcbmBgYCJ9 -->
+<pre class="r"><code>pokemon_df &lt;- data.frame(Number = poke_nums,Name = poke_names, BST = poke_total)
 head(pokemon_df)</code></pre>
 <!-- rnb-source-end -->
-<!-- rnb-output-begin eyJkYXRhIjoiICBOdW1iZXIgICAgICAgICAgICAgICAgICBOYW1lXG4xICAgIDAwMSAgICAgICAgICAgICBCdWxiYXNhdXJcbjIgICAgMDAyICAgICAgICAgICAgICAgSXZ5c2F1clxuMyAgICAwMDMgICAgICAgICAgICAgIFZlbnVzYXVyXG40ICAgIDAwMyBWZW51c2F1ck1lZ2EgVmVudXNhdXJcbjUgICAgMDA0ICAgICAgICAgICAgQ2hhcm1hbmRlclxuNiAgICAwMDUgICAgICAgICAgICBDaGFybWVsZW9uXG4ifQ== -->
-<pre><code>  Number                  Name
-1    001             Bulbasaur
-2    002               Ivysaur
-3    003              Venusaur
-4    003 VenusaurMega Venusaur
-5    004            Charmander
-6    005            Charmeleon</code></pre>
+<!-- rnb-output-begin eyJkYXRhIjoiICBOdW1iZXIgICAgICAgICAgICAgICAgICBOYW1lIEJTVFxuMSAgICAwMDEgICAgICAgICAgICAgQnVsYmFzYXVyIDMxOFxuMiAgICAwMDIgICAgICAgICAgICAgICBJdnlzYXVyIDQwNVxuMyAgICAwMDMgICAgICAgICAgICAgIFZlbnVzYXVyIDUyNVxuNCAgICAwMDMgVmVudXNhdXJNZWdhIFZlbnVzYXVyIDYyNVxuNSAgICAwMDQgICAgICAgICAgICBDaGFybWFuZGVyIDMwOVxuNiAgICAwMDUgICAgICAgICAgICBDaGFybWVsZW9uIDQwNVxuIn0= -->
+<pre><code>  Number                  Name BST
+1    001             Bulbasaur 318
+2    002               Ivysaur 405
+3    003              Venusaur 525
+4    003 VenusaurMega Venusaur 625
+5    004            Charmander 309
+6    005            Charmeleon 405</code></pre>
 <!-- rnb-output-end -->
 <!-- rnb-chunk-end -->
 <!-- rnb-text-begin -->
 <!-- rnb-text-end -->
 
-<div id="rmd-source-code">LS0tDQp0aXRsZTogIlBva2Vtb24gV2ViIFNjcmFwZXIiDQpvdXRwdXQ6IGh0bWxfbm90ZWJvb2sNCi0tLQ0KDQoNCmBgYHtyIExpYnJhcmllc30NCiAgICAjIEdlbmVyYWwtcHVycG9zZSBkYXRhIHdyYW5nbGluZw0KICAgIGxpYnJhcnkodGlkeXZlcnNlKSAgDQoNCiAgICAjIFBhcnNpbmcgb2YgSFRNTC9YTUwgZmlsZXMgIA0KICAgIGxpYnJhcnkocnZlc3QpICAgIA0KDQogICAgIyBTdHJpbmcgbWFuaXB1bGF0aW9uDQogICAgbGlicmFyeShzdHJpbmdyKSAgIA0KDQogICAgIyBFYXNlcyBEYXRlVGltZSBtYW5pcHVsYXRpb24NCiAgICBsaWJyYXJ5KGx1YnJpZGF0ZSkNCmBgYA0KDQpgYGB7ciBTY3JhcGUgcGFnZX0NCg0KdXJsIDwtICJodHRwczovL3Bva2Vtb25kYi5uZXQvcG9rZWRleC9hbGwiDQp3ZWJwYWdlIDwtIHJlYWRfaHRtbCh1cmwpDQpgYGANCg0KRmluZCB0aGUgbWF4aW11bSBudW1iZXIgb2YgcGFnZXMgdG8gYmUgcXVlcmllZA0KR2VuZXJhdGUgYWxsIHRoZSBzdWJwYWdlcyB0aGF0IG1ha2UgdXAgdGhlIHJldmlld3MNClNjcmFwZSB0aGUgaW5mb3JtYXRpb24gZnJvbSBlYWNoIG9mIHRoZW0NCkNvbWJpbmUgdGhlIGluZm9ybWF0aW9uIGludG8gb25lIGNvbXByZWhlbnNpdmUgZGF0YSBmcmFtZQ0KDQpgYGB7ciBBbGwgaW5mb30NCnBva2Vtb25faHRtbCA8LSBodG1sX25vZGVzKHdlYnBhZ2UsIi5jZWxsLW51bSAsIC5jZWxsLXRvdGFsICwgLmNlbGwtbmFtZSIpDQoNCnBva2Vtb24gPC0gaHRtbF90ZXh0KHBva2Vtb25faHRtbCkNCmBgYA0KDQoNCmBgYHtyIFBva2Vtb24gbnVtYmVyc30NCg0KcG9rZV9udW1zX2h0bWwgPC0gaHRtbF9ub2Rlcyh3ZWJwYWdlLCIuY2VsbC1maXhlZCIpDQoNCnBva2VfbnVtcyA8LSBodG1sX3RleHQocG9rZV9udW1zX2h0bWwpDQoNCmhlYWQocG9rZV9udW1zKQ0KDQpgYGANCg0KYGBge3IgUG9rZW1vbiBuYW1lc30NCnBva2VfbmFtZXNfaHRtbCA8LSBodG1sX25vZGVzKHdlYnBhZ2UsICIuY2VsbC1uYW1lIikNCg0KcG9rZV9uYW1lcyA8LSBodG1sX3RleHQocG9rZV9uYW1lc19odG1sKQ0KDQpoZWFkKHBva2VfbmFtZXMpDQpgYGANCg0KYGBge3IgQ29tYmluZSBpbnRvIGEgZGF0YWZyYW1lfQ0KcG9rZW1vbl9kZiA8LSBkYXRhLmZyYW1lKE51bWJlciA9IHBva2VfbnVtcyxOYW1lID0gcG9rZV9uYW1lcykNCg0KaGVhZChwb2tlbW9uX2RmKQ0KDQpgYGANCg0K</div>
+<div id="rmd-source-code">LS0tDQp0aXRsZTogIlBva2Vtb24gV2ViIFNjcmFwZXIiDQpvdXRwdXQ6IGh0bWxfbm90ZWJvb2sNCi0tLQ0KDQoNCmBgYHtyIExpYnJhcmllc30NCiAgICAjIEdlbmVyYWwtcHVycG9zZSBkYXRhIHdyYW5nbGluZw0KICAgIGxpYnJhcnkodGlkeXZlcnNlKSAgDQoNCiAgICAjIFBhcnNpbmcgb2YgSFRNTC9YTUwgZmlsZXMgIA0KICAgIGxpYnJhcnkocnZlc3QpICAgIA0KDQogICAgIyBTdHJpbmcgbWFuaXB1bGF0aW9uDQogICAgbGlicmFyeShzdHJpbmdyKSAgIA0KDQogICAgIyBFYXNlcyBEYXRlVGltZSBtYW5pcHVsYXRpb24NCiAgICBsaWJyYXJ5KGx1YnJpZGF0ZSkNCmBgYA0KDQpgYGB7ciBTY3JhcGUgcGFnZX0NCg0KdXJsIDwtICJodHRwczovL3Bva2Vtb25kYi5uZXQvcG9rZWRleC9hbGwiDQp3ZWJwYWdlIDwtIHJlYWRfaHRtbCh1cmwpDQpgYGANCg0KRmluZCB0aGUgbWF4aW11bSBudW1iZXIgb2YgcGFnZXMgdG8gYmUgcXVlcmllZA0KR2VuZXJhdGUgYWxsIHRoZSBzdWJwYWdlcyB0aGF0IG1ha2UgdXAgdGhlIHJldmlld3MNClNjcmFwZSB0aGUgaW5mb3JtYXRpb24gZnJvbSBlYWNoIG9mIHRoZW0NCkNvbWJpbmUgdGhlIGluZm9ybWF0aW9uIGludG8gb25lIGNvbXByZWhlbnNpdmUgZGF0YSBmcmFtZQ0KDQpgYGB7ciBBbGwgaW5mb30NCnBva2Vtb25faHRtbCA8LSBodG1sX25vZGVzKHdlYnBhZ2UsIi5jZWxsLW51bSAsIC5jZWxsLXRvdGFsICwgLmNlbGwtbmFtZSIpDQoNCnBva2Vtb24gPC0gaHRtbF90ZXh0KHBva2Vtb25faHRtbCkNCmBgYA0KDQoNCmBgYHtyIFBva2Vtb24gbnVtYmVyc30NCg0KcG9rZV9udW1zX2h0bWwgPC0gaHRtbF9ub2Rlcyh3ZWJwYWdlLCIuY2VsbC1maXhlZCIpDQoNCnBva2VfbnVtcyA8LSBodG1sX3RleHQocG9rZV9udW1zX2h0bWwpDQoNCmhlYWQocG9rZV9udW1zKQ0KDQpgYGANCg0KYGBge3IgUG9rZW1vbiBuYW1lc30NCnBva2VfbmFtZXNfaHRtbCA8LSBodG1sX25vZGVzKHdlYnBhZ2UsICIuY2VsbC1uYW1lIikNCg0KcG9rZV9uYW1lcyA8LSBodG1sX3RleHQocG9rZV9uYW1lc19odG1sKQ0KDQpoZWFkKHBva2VfbmFtZXMpDQpgYGANCg0KYGBge3IgUG9rZW1vbiBCU1R9DQoNCnBva2VfdG90YWxfaHRtbCA8LSBodG1sX25vZGVzKHdlYnBhZ2UsICIuY2VsbC10b3RhbCIpDQoNCnBva2VfdG90YWwgPC0gaHRtbF90ZXh0KHBva2VfdG90YWxfaHRtbCkNCg0KDQpgYGANCg0KDQpgYGB7ciBDb21iaW5lIGludG8gYSBkYXRhZnJhbWV9DQpwb2tlbW9uX2RmIDwtIGRhdGEuZnJhbWUoTnVtYmVyID0gcG9rZV9udW1zLE5hbWUgPSBwb2tlX25hbWVzLCBCU1QgPSBwb2tlX3RvdGFsKQ0KDQpoZWFkKHBva2Vtb25fZGYpDQoNCmBgYA0KDQo=</div>
 
 
 
