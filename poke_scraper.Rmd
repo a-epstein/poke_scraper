@@ -29,7 +29,14 @@ Generate all the subpages that make up the reviews
 Scrape the information from each of them
 Combine the information into one comprehensive data frame
 
-```{r}
+```{r All info}
+pokemon_html <- html_nodes(webpage,".cell-num , .cell-total , .cell-name")
+
+pokemon <- html_text(pokemon_html)
+```
+
+
+```{r Pokemon numbers}
 
 poke_nums_html <- html_nodes(webpage,".cell-fixed")
 
@@ -37,6 +44,20 @@ poke_nums <- html_text(poke_nums_html)
 
 head(poke_nums)
 
+```
+
+```{r Pokemon names}
+poke_names_html <- html_nodes(webpage, ".cell-name")
+
+poke_names <- html_text(poke_names_html)
+
+head(poke_names)
+```
+
+```{r Combine into a dataframe}
+pokemon_df <- data.frame(Number = poke_nums,Name = poke_names)
+
+head(pokemon_df)
 
 ```
 

@@ -175,26 +175,57 @@ $(document).ready(function () {
 <!-- rnb-text-begin -->
 <!-- rnb-text-end -->
 <!-- rnb-chunk-begin -->
-<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuICAgICMgR2VuZXJhbC1wdXJwb3NlIGRhdGEgd3JhbmdsaW5nXG4gICAgbGlicmFyeSh0aWR5dmVyc2UpICBcblxuICAgICMgUGFyc2luZyBvZiBIVE1ML1hNTCBmaWxlcyAgXG4gICAgbGlicmFyeShydmVzdCkgICAgXG5cbiAgICAjIFN0cmluZyBtYW5pcHVsYXRpb25cbiAgICBsaWJyYXJ5KHN0cmluZ3IpICAgXG5cbiAgICAjIEVhc2VzIERhdGVUaW1lIG1hbmlwdWxhdGlvblxuICAgIGxpYnJhcnkobHVicmlkYXRlKVxuYGBgIn0= -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuICAgICMgR2VuZXJhbC1wdXJwb3NlIGRhdGEgd3JhbmdsaW5nXG4gICAgbGlicmFyeSh0aWR5dmVyc2UpICBcbmBgYCJ9 -->
 <pre class="r"><code>    # General-purpose data wrangling
-    library(tidyverse)  
+    library(tidyverse)  </code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-output-begin eyJkYXRhIjoiXHUwMDFiWzMwbS0tIFx1MDAxYlsxbUF0dGFjaGluZyBwYWNrYWdlc1x1MDAxYlsyMm0gLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tIHRpZHl2ZXJzZSAxLjIuMSAtLVx1MDAxYlszOW1cblx1MDAxYlszMG1cdTAwMWJbMzJtdlx1MDAxYlszMG0gXHUwMDFiWzM0bWdncGxvdDJcdTAwMWJbMzBtIDIuMi4xICAgICBcdTAwMWJbMzJtdlx1MDAxYlszMG0gXHUwMDFiWzM0bXB1cnJyICBcdTAwMWJbMzBtIDAuMi41XG5cdTAwMWJbMzJtdlx1MDAxYlszMG0gXHUwMDFiWzM0bXRpYmJsZSBcdTAwMWJbMzBtIDEuNC4yICAgICBcdTAwMWJbMzJtdlx1MDAxYlszMG0gXHUwMDFiWzM0bWRwbHlyICBcdTAwMWJbMzBtIDAuNy41XG5cdTAwMWJbMzJtdlx1MDAxYlszMG0gXHUwMDFiWzM0bXRpZHlyICBcdTAwMWJbMzBtIDAuOC4xICAgICBcdTAwMWJbMzJtdlx1MDAxYlszMG0gXHUwMDFiWzM0bXN0cmluZ3JcdTAwMWJbMzBtIDEuMy4xXG5cdTAwMWJbMzJtdlx1MDAxYlszMG0gXHUwMDFiWzM0bXJlYWRyICBcdTAwMWJbMzBtIDEuMS4xICAgICBcdTAwMWJbMzJtdlx1MDAxYlszMG0gXHUwMDFiWzM0bWZvcmNhdHNcdTAwMWJbMzBtIDAuMy4wXHUwMDFiWzM5bVxuXHUwMDFiWzMwbS0tIFx1MDAxYlsxbUNvbmZsaWN0c1x1MDAxYlsyMm0gLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tIHRpZHl2ZXJzZV9jb25mbGljdHMoKSAtLVxuXHUwMDFiWzMxbXhcdTAwMWJbMzBtIFx1MDAxYlszNG1kcGx5clx1MDAxYlszMG06Olx1MDAxYlszMm1maWx0ZXIoKVx1MDAxYlszMG0gbWFza3MgXHUwMDFiWzM0bXN0YXRzXHUwMDFiWzMwbTo6ZmlsdGVyKClcblx1MDAxYlszMW14XHUwMDFiWzMwbSBcdTAwMWJbMzRtZHBseXJcdTAwMWJbMzBtOjpcdTAwMWJbMzJtbGFnKClcdTAwMWJbMzBtICAgIG1hc2tzIFx1MDAxYlszNG1zdGF0c1x1MDAxYlszMG06OmxhZygpXHUwMDFiWzM5bVxuIn0= -->
+<pre><code>[30m-- [1mAttaching packages[22m --------------------------------------- tidyverse 1.2.1 --[39m
+[30m[32mv[30m [34mggplot2[30m 2.2.1     [32mv[30m [34mpurrr  [30m 0.2.5
+[32mv[30m [34mtibble [30m 1.4.2     [32mv[30m [34mdplyr  [30m 0.7.5
+[32mv[30m [34mtidyr  [30m 0.8.1     [32mv[30m [34mstringr[30m 1.3.1
+[32mv[30m [34mreadr  [30m 1.1.1     [32mv[30m [34mforcats[30m 0.3.0[39m
+[30m-- [1mConflicts[22m ------------------------------------------ tidyverse_conflicts() --
+[31mx[30m [34mdplyr[30m::[32mfilter()[30m masks [34mstats[30m::filter()
+[31mx[30m [34mdplyr[30m::[32mlag()[30m    masks [34mstats[30m::lag()[39m</code></pre>
+<!-- rnb-output-end -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuICAgICMgUGFyc2luZyBvZiBIVE1ML1hNTCBmaWxlcyAgXG4gICAgbGlicmFyeShydmVzdCkgICAgXG5gYGAifQ== -->
+<pre class="r"><code>    # Parsing of HTML/XML files  
+    library(rvest)    </code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-output-begin eyJkYXRhIjoicGFja2FnZSDjpLzjuLFydmVzdOOkvOO4siB3YXMgYnVpbHQgdW5kZXIgUiB2ZXJzaW9uIDMuNS4xTG9hZGluZyByZXF1aXJlZCBwYWNrYWdlOiB4bWwyXG5cbkF0dGFjaGluZyBwYWNrYWdlOiDjpLzjuLFydmVzdOOkvOO4slxuXG5UaGUgZm9sbG93aW5nIG9iamVjdCBpcyBtYXNrZWQgZnJvbSDjpLzjuLFwYWNrYWdlOnB1cnJy46S847iyOlxuXG4gICAgcGx1Y2tcblxuVGhlIGZvbGxvd2luZyBvYmplY3QgaXMgbWFza2VkIGZyb20g46S847ixcGFja2FnZTpyZWFkcuOkvOO4sjpcblxuICAgIGd1ZXNzX2VuY29kaW5nXG4ifQ== -->
+<pre><code>package 㤼㸱rvest㤼㸲 was built under R version 3.5.1Loading required package: xml2
 
-    # Parsing of HTML/XML files  
-    library(rvest)    
+Attaching package: 㤼㸱rvest㤼㸲
 
-    # String manipulation
+The following object is masked from 㤼㸱package:purrr㤼㸲:
+
+    pluck
+
+The following object is masked from 㤼㸱package:readr㤼㸲:
+
+    guess_encoding</code></pre>
+<!-- rnb-output-end -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuICAgICMgU3RyaW5nIG1hbmlwdWxhdGlvblxuICAgIGxpYnJhcnkoc3RyaW5ncikgICBcbiAgICAjIEVhc2VzIERhdGVUaW1lIG1hbmlwdWxhdGlvblxuICAgIGxpYnJhcnkobHVicmlkYXRlKVxuYGBgIn0= -->
+<pre class="r"><code>    # String manipulation
     library(stringr)   
-
     # Eases DateTime manipulation
     library(lubridate)</code></pre>
 <!-- rnb-source-end -->
+<!-- rnb-output-begin eyJkYXRhIjoiXG5BdHRhY2hpbmcgcGFja2FnZTog46S847ixbHVicmlkYXRl46S847iyXG5cblRoZSBmb2xsb3dpbmcgb2JqZWN0IGlzIG1hc2tlZCBmcm9tIOOkvOO4sXBhY2thZ2U6YmFzZeOkvOO4sjpcblxuICAgIGRhdGVcbiJ9 -->
+<pre><code>
+Attaching package: 㤼㸱lubridate㤼㸲
+
+The following object is masked from 㤼㸱package:base㤼㸲:
+
+    date</code></pre>
+<!-- rnb-output-end -->
 <!-- rnb-chunk-end -->
 <!-- rnb-text-begin -->
 <!-- rnb-text-end -->
 <!-- rnb-chunk-begin -->
-<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuXG51cmwgPC0gXCJodHRwczovL3Bva2Vtb25kYi5uZXQvcG9rZWRleC9hbGxcIlxud2VicGFnZSA8LSByZWFkX2h0bWwodXJsKVxuYGBgIn0= -->
-<pre class="r"><code>
-url &lt;- &quot;https://pokemondb.net/pokedex/all&quot;
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxudXJsIDwtIFwiaHR0cHM6Ly9wb2tlbW9uZGIubmV0L3Bva2VkZXgvYWxsXCJcbndlYnBhZ2UgPC0gcmVhZF9odG1sKHVybClcbmBgYCJ9 -->
+<pre class="r"><code>url &lt;- &quot;https://pokemondb.net/pokedex/all&quot;
 webpage &lt;- read_html(url)</code></pre>
 <!-- rnb-source-end -->
 <!-- rnb-chunk-end -->
@@ -202,7 +233,16 @@ webpage &lt;- read_html(url)</code></pre>
 <p>Find the maximum number of pages to be queried Generate all the subpages that make up the reviews Scrape the information from each of them Combine the information into one comprehensive data frame</p>
 <!-- rnb-text-end -->
 <!-- rnb-chunk-begin -->
-<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuXG5wb2tlX251bXNfaHRtbCA8LSBodG1sX25vZGVzKHdlYnBhZ2UsXCIuY2VsbC1maXhlZFwiKVxuXG5wb2tlX251bXMgPC0gaHRtbF90ZXh0KHBva2VfbnVtc19odG1sKVxuXG5oZWFkKHBva2VfbnVtcylcblxuXG5gYGAifQ== -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxucG9rZW1vbl9odG1sIDwtIGh0bWxfbm9kZXMod2VicGFnZSxcIi5jZWxsLW51bSAsIC5jZWxsLXRvdGFsICwgLmNlbGwtbmFtZVwiKVxuXG5wb2tlbW9uIDwtIGh0bWxfdGV4dChwb2tlbW9uX2h0bWwpXG5gYGAifQ== -->
+<pre class="r"><code>pokemon_html &lt;- html_nodes(webpage,&quot;.cell-num , .cell-total , .cell-name&quot;)
+
+pokemon &lt;- html_text(pokemon_html)</code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-chunk-end -->
+<!-- rnb-text-begin -->
+<!-- rnb-text-end -->
+<!-- rnb-chunk-begin -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuXG5wb2tlX251bXNfaHRtbCA8LSBodG1sX25vZGVzKHdlYnBhZ2UsXCIuY2VsbC1maXhlZFwiKVxuXG5wb2tlX251bXMgPC0gaHRtbF90ZXh0KHBva2VfbnVtc19odG1sKVxuXG5oZWFkKHBva2VfbnVtcylcblxuYGBgIn0= -->
 <pre class="r"><code>
 poke_nums_html &lt;- html_nodes(webpage,&quot;.cell-fixed&quot;)
 
@@ -214,8 +254,38 @@ head(poke_nums)
 <!-- rnb-chunk-end -->
 <!-- rnb-text-begin -->
 <!-- rnb-text-end -->
+<!-- rnb-chunk-begin -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxucG9rZV9uYW1lc19odG1sIDwtIGh0bWxfbm9kZXMod2VicGFnZSwgXCIuY2VsbC1uYW1lXCIpXG5wb2tlX25hbWVzIDwtIGh0bWxfdGV4dChwb2tlX25hbWVzX2h0bWwpXG5oZWFkKHBva2VfbmFtZXMpXG5gYGAifQ== -->
+<pre class="r"><code>poke_names_html &lt;- html_nodes(webpage, &quot;.cell-name&quot;)
+poke_names &lt;- html_text(poke_names_html)
+head(poke_names)</code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-output-begin eyJkYXRhIjoiWzFdIFwiQnVsYmFzYXVyXCIgICAgICAgICAgICAgXCJJdnlzYXVyXCIgICAgICAgICAgICAgICBcIlZlbnVzYXVyXCIgICAgICAgICAgICAgIFwiVmVudXNhdXJNZWdhIFZlbnVzYXVyXCJcbls1XSBcIkNoYXJtYW5kZXJcIiAgICAgICAgICAgIFwiQ2hhcm1lbGVvblwiICAgICAgICAgICBcbiJ9 -->
+<pre><code>[1] &quot;Bulbasaur&quot;             &quot;Ivysaur&quot;               &quot;Venusaur&quot;              &quot;VenusaurMega Venusaur&quot;
+[5] &quot;Charmander&quot;            &quot;Charmeleon&quot;           </code></pre>
+<!-- rnb-output-end -->
+<!-- rnb-chunk-end -->
+<!-- rnb-text-begin -->
+<!-- rnb-text-end -->
+<!-- rnb-chunk-begin -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxucG9rZW1vbl9kZiA8LSBkYXRhLmZyYW1lKE51bWJlciA9IHBva2VfbnVtcyxOYW1lID0gcG9rZV9uYW1lcylcbmhlYWQocG9rZW1vbl9kZilcbmBgYCJ9 -->
+<pre class="r"><code>pokemon_df &lt;- data.frame(Number = poke_nums,Name = poke_names)
+head(pokemon_df)</code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-output-begin eyJkYXRhIjoiICBOdW1iZXIgICAgICAgICAgICAgICAgICBOYW1lXG4xICAgIDAwMSAgICAgICAgICAgICBCdWxiYXNhdXJcbjIgICAgMDAyICAgICAgICAgICAgICAgSXZ5c2F1clxuMyAgICAwMDMgICAgICAgICAgICAgIFZlbnVzYXVyXG40ICAgIDAwMyBWZW51c2F1ck1lZ2EgVmVudXNhdXJcbjUgICAgMDA0ICAgICAgICAgICAgQ2hhcm1hbmRlclxuNiAgICAwMDUgICAgICAgICAgICBDaGFybWVsZW9uXG4ifQ== -->
+<pre><code>  Number                  Name
+1    001             Bulbasaur
+2    002               Ivysaur
+3    003              Venusaur
+4    003 VenusaurMega Venusaur
+5    004            Charmander
+6    005            Charmeleon</code></pre>
+<!-- rnb-output-end -->
+<!-- rnb-chunk-end -->
+<!-- rnb-text-begin -->
+<!-- rnb-text-end -->
 
-<div id="rmd-source-code">LS0tDQp0aXRsZTogIlBva2Vtb24gV2ViIFNjcmFwZXIiDQpvdXRwdXQ6IGh0bWxfbm90ZWJvb2sNCi0tLQ0KDQoNCmBgYHtyIExpYnJhcmllc30NCiAgICAjIEdlbmVyYWwtcHVycG9zZSBkYXRhIHdyYW5nbGluZw0KICAgIGxpYnJhcnkodGlkeXZlcnNlKSAgDQoNCiAgICAjIFBhcnNpbmcgb2YgSFRNTC9YTUwgZmlsZXMgIA0KICAgIGxpYnJhcnkocnZlc3QpICAgIA0KDQogICAgIyBTdHJpbmcgbWFuaXB1bGF0aW9uDQogICAgbGlicmFyeShzdHJpbmdyKSAgIA0KDQogICAgIyBFYXNlcyBEYXRlVGltZSBtYW5pcHVsYXRpb24NCiAgICBsaWJyYXJ5KGx1YnJpZGF0ZSkNCmBgYA0KDQpgYGB7ciBTY3JhcGUgcGFnZX0NCg0KdXJsIDwtICJodHRwczovL3Bva2Vtb25kYi5uZXQvcG9rZWRleC9hbGwiDQp3ZWJwYWdlIDwtIHJlYWRfaHRtbCh1cmwpDQpgYGANCg0KRmluZCB0aGUgbWF4aW11bSBudW1iZXIgb2YgcGFnZXMgdG8gYmUgcXVlcmllZA0KR2VuZXJhdGUgYWxsIHRoZSBzdWJwYWdlcyB0aGF0IG1ha2UgdXAgdGhlIHJldmlld3MNClNjcmFwZSB0aGUgaW5mb3JtYXRpb24gZnJvbSBlYWNoIG9mIHRoZW0NCkNvbWJpbmUgdGhlIGluZm9ybWF0aW9uIGludG8gb25lIGNvbXByZWhlbnNpdmUgZGF0YSBmcmFtZQ0KDQpgYGB7cn0NCg0KcG9rZV9udW1zX2h0bWwgPC0gaHRtbF9ub2Rlcyh3ZWJwYWdlLCIuY2VsbC1maXhlZCIpDQoNCnBva2VfbnVtcyA8LSBodG1sX3RleHQocG9rZV9udW1zX2h0bWwpDQoNCmhlYWQocG9rZV9udW1zKQ0KDQoNCmBgYA0KDQo=</div>
+<div id="rmd-source-code">LS0tDQp0aXRsZTogIlBva2Vtb24gV2ViIFNjcmFwZXIiDQpvdXRwdXQ6IGh0bWxfbm90ZWJvb2sNCi0tLQ0KDQoNCmBgYHtyIExpYnJhcmllc30NCiAgICAjIEdlbmVyYWwtcHVycG9zZSBkYXRhIHdyYW5nbGluZw0KICAgIGxpYnJhcnkodGlkeXZlcnNlKSAgDQoNCiAgICAjIFBhcnNpbmcgb2YgSFRNTC9YTUwgZmlsZXMgIA0KICAgIGxpYnJhcnkocnZlc3QpICAgIA0KDQogICAgIyBTdHJpbmcgbWFuaXB1bGF0aW9uDQogICAgbGlicmFyeShzdHJpbmdyKSAgIA0KDQogICAgIyBFYXNlcyBEYXRlVGltZSBtYW5pcHVsYXRpb24NCiAgICBsaWJyYXJ5KGx1YnJpZGF0ZSkNCmBgYA0KDQpgYGB7ciBTY3JhcGUgcGFnZX0NCg0KdXJsIDwtICJodHRwczovL3Bva2Vtb25kYi5uZXQvcG9rZWRleC9hbGwiDQp3ZWJwYWdlIDwtIHJlYWRfaHRtbCh1cmwpDQpgYGANCg0KRmluZCB0aGUgbWF4aW11bSBudW1iZXIgb2YgcGFnZXMgdG8gYmUgcXVlcmllZA0KR2VuZXJhdGUgYWxsIHRoZSBzdWJwYWdlcyB0aGF0IG1ha2UgdXAgdGhlIHJldmlld3MNClNjcmFwZSB0aGUgaW5mb3JtYXRpb24gZnJvbSBlYWNoIG9mIHRoZW0NCkNvbWJpbmUgdGhlIGluZm9ybWF0aW9uIGludG8gb25lIGNvbXByZWhlbnNpdmUgZGF0YSBmcmFtZQ0KDQpgYGB7ciBBbGwgaW5mb30NCnBva2Vtb25faHRtbCA8LSBodG1sX25vZGVzKHdlYnBhZ2UsIi5jZWxsLW51bSAsIC5jZWxsLXRvdGFsICwgLmNlbGwtbmFtZSIpDQoNCnBva2Vtb24gPC0gaHRtbF90ZXh0KHBva2Vtb25faHRtbCkNCmBgYA0KDQoNCmBgYHtyIFBva2Vtb24gbnVtYmVyc30NCg0KcG9rZV9udW1zX2h0bWwgPC0gaHRtbF9ub2Rlcyh3ZWJwYWdlLCIuY2VsbC1maXhlZCIpDQoNCnBva2VfbnVtcyA8LSBodG1sX3RleHQocG9rZV9udW1zX2h0bWwpDQoNCmhlYWQocG9rZV9udW1zKQ0KDQpgYGANCg0KYGBge3IgUG9rZW1vbiBuYW1lc30NCnBva2VfbmFtZXNfaHRtbCA8LSBodG1sX25vZGVzKHdlYnBhZ2UsICIuY2VsbC1uYW1lIikNCg0KcG9rZV9uYW1lcyA8LSBodG1sX3RleHQocG9rZV9uYW1lc19odG1sKQ0KDQpoZWFkKHBva2VfbmFtZXMpDQpgYGANCg0KYGBge3IgQ29tYmluZSBpbnRvIGEgZGF0YWZyYW1lfQ0KcG9rZW1vbl9kZiA8LSBkYXRhLmZyYW1lKE51bWJlciA9IHBva2VfbnVtcyxOYW1lID0gcG9rZV9uYW1lcykNCg0KaGVhZChwb2tlbW9uX2RmKQ0KDQpgYGANCg0K</div>
 
 
 
